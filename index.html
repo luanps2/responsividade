@@ -34,7 +34,16 @@
           <ul>
             <li>
               <a href="#" aria-label="Ir para a página inicial">
-                <img src="./assets/logo-large.png" alt="" />
+                <img src="./assets/logo-large.png" 
+                srcset="
+                ./assets/logo-small.png 74w,
+                ./assets/logo-medium.png 74w,
+                ./assets/logo-large.png 139w
+                "
+
+                sizes="(max-width: 360px) 74px, (max-width: 768px) 74px, 139px"
+                alt=""
+                 />
               </a>
             </li>
           </ul>
@@ -53,6 +62,9 @@
             </li>
             <li class="cabecalho__item">
               <a href="#">Projetos</a>
+            </li>
+            <li class="cabecalho__item">
+              <a href="#">Entrar</a>
             </li>
           </ul>
         </nav>
@@ -90,6 +102,9 @@
         <div>
           <img
             src="./assets/imagens/quem-somos-desktop.png"
+            srcset="./assets/imagens/quem-somos-mobile.png 299w"
+            srcset="./assets/imagens/quem-somos-desktop.png 530w"
+            sizes="(max-width: 360px) 299px, (max-width: 768px) 299px, 530px"
             alt="Imagem de estudante sorrindo"
           />
         </div>
@@ -195,11 +210,18 @@
                 estudantes a pensar. Acreditamos que a melhor maneira de fazer
                 isso é contextualizando os conteúdos, trazendo problemas e casos
                 reais que nossos alunos e alunas poderão realmente encontrar em
-                seu dia a dia.
+                seu dia a dia.  
               </p>
             </div>
             <img
               src="./assets/imagens/vantagens-desktop.svg"
+              srcset="
+              ./assets/imagens/vantagens-mobile.svg 321w,
+              ./assets/imagens/vantagens-tablet.svg 332w,
+              ./assets/imagens/vantagens-desktop.svg 594w,
+              "
+
+            sizes="(max-width: 360px) 321px, (max-width: 768px) 332px, 594px "
               alt="diagrama de Metodologia"
             />
           </div>
